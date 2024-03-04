@@ -1,19 +1,18 @@
 import { books } from "@/lib/books";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-    const BookCard = ({ key, book }: any) => {
+    const BookCard = ({ key1, book }: any) => {
         return (
             <div
-                key={key}
-                className="grid grid-cols-5 p-5  hover:shadow-xl border rounded-md "
+                key={key1}
+                className="grid grid-cols-5 p-5  hover:shadow-xl border rounded-md w-full h-full "
             >
                 <div className="col-span-2 p-5 ">
                     <div className="relative ">
                         {/* <div className='bg-dark  top-0 -right-3 -z-10 absolute w-[102%] h-[102%] rounded-2xl'/> */}
-                        <img
+                        <Image
                             width="200"
                             height="300"
                             src={book.imageLocation}
@@ -52,10 +51,10 @@ export default function Home() {
             </div>
         );
     };
-    const BookCardMobile = ({ key, book }: any) => {
+    const BookCardMobile = ({ key1, book }: any) => {
         return (
             <div
-                key={key}
+                key={key1}
                 className="grid grid-cols-5 p-1 shadow-2xl hover:shadow-blue-200 border "
             >
                 <div className="col-span-5 p-2">
@@ -112,14 +111,17 @@ export default function Home() {
                 <div className="hidden md:inline">
                     <div className=" grid grid-cols-1  md:grid-cols-2 p-10 gap-16 px-5 lg:px-20">
                         {books.map((book, index) => (
-                            <BookCard key={book.name + index} book={book} />
+                            <div key={index} className="w-full h-full">
+
+                                <BookCard key1={index} book={book} />
+                            </div>
                         ))}
                     </div>
                 </div>
                 <div className=" md:hidden">
                     <div className=" grid grid-cols-1   p-2 gap-4">
                         {books.map((book, index) => (
-                            <BookCardMobile key={book.name + index} book={book} />
+                            <BookCardMobile key={index} book={book} />
                         ))}
                     </div>
                 </div>

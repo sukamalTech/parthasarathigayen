@@ -32,7 +32,7 @@ export default function RecentBooks() {
     return (
         <section className='w-full flex flex-col items-center  lg:px-20'>
             <h3 className='text-lg uppercase text-gray-500'>CATEGORY</h3>
-            <h1 className='text-2xl lg:text-4xl font-bold max-w-lg text-center mb-[50px]'>Recent Books of Writer</h1>
+            <h1 className='text-2xl lg:text-4xl font-bold max-w-lg text-center mb-[50px]'>উল্লেখযোগ্য গ্রন্থাবলী</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 w-full '>
                 {services && services.map((item, i) =>
                     <div key={i} className='relative '>

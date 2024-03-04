@@ -4,6 +4,7 @@ import Testimonials from "@/components/Testimonials";
 import RecentBooks from "@/components/RecentBooks";
 import Galary from "@/components/Galary";
 import MostPopular from "@/components/MostPopular";
+import Review from "@/components/Review";
 
 const font1 = Noto_Serif_Bengali({ subsets: ["latin"], weight: ["400"] });
 const font3 = Noto_Sans_Bengali({ subsets: ["latin"], weight: ["800"] });
@@ -27,6 +28,7 @@ export default function Home() {
       <MostPopular />
       <Galary />
       <Testimonials />
+      {/* <Review /> */}
 
 
     </main>

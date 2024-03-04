@@ -85,7 +85,7 @@ export const books = [
     pdfLocation: "/pdf/রবীন্দ্রনাথ.pdf",
     bookType: "probondho",
     price: "400",
-    imageLocation: "rabindranath.jpg",
+    imageLocation: "/image/books/rabindranath.jpg",
   },
 
   {
@@ -174,7 +174,7 @@ export const books = [
     pdfLocation: "/pdf/শ্রীমদভগবদগীতা_ও_মার্ক্সবাদ.pdf",
     bookType: "probondho",
     price: "100",
-    imageLocation: "",
+    imageLocation: "/image/books/",
   },
   {
     id: 18,
@@ -185,7 +185,7 @@ export const books = [
     pdfLocation: "/pdf/শ্রীমদভগবাদগীতা_ও_দিব্যজীবন.pdf",
     bookType: "probondho",
     price: "250",
-    imageLocation: "",
+    imageLocation: "/image/books/",
   },
   {
     id: 19,
@@ -196,7 +196,7 @@ export const books = [
     pdfLocation: "/pdf/সংশয়বাদীর_শত_প্রশ্ন_ও_গীতাধ্যানীর_সদুত্তর.pdf",
     bookType: "probondho",
     price: "150",
-    imageLocation: "",
+    imageLocation: "/image/books/",
   },
   {
     id: 20,
@@ -207,6 +207,6 @@ export const books = [
     pdfLocation: "/pdf/সীমদভগবদগীতা_ও_দেহতত্ত্ববাদ.pdf",
     bookType: "probondho",
     price: "100",
-    imageLocation: "",
+    imageLocation: "/image/books/",
   },
 ];
