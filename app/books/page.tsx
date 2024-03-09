@@ -1,8 +1,20 @@
 import { books } from "@/lib/books";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+export const metadata: Metadata = {
+    title: 'পার্থসারথি গায়েন উল্লেখযোগ্য গ্রন্থাবলী',
+    description: `যুগনায়ক বিবেকানন্দ, ম্যানগ্রোভ, নব আলোকে নিবেদিতা, মৃত্যু শোক মৃত্যু লোক ও মৃত্যুঞ্জয় রবীন্দ্রনাথ ,শ্রীমদ ভগবদগীতা ও দিব্যজীবন,`,
+    keywords: ['পার্থসারথি গায়েন', 'মৃত্যুঞ্জয় রবীন্দ্রনাথ', 'ম্যানগ্রোভ', 'শ্রীমদ ভগবদগীতা ও দিব্যজীবন'],
+    alternates: {
+        canonical: '/books',
+        languages: {
+            'en-US': '/en-US',
+        },
+    },
+}
 
-export default function Home() {
+export default function Books() {
     const BookCard = ({ key1, book }: any) => {
         return (
             <div
