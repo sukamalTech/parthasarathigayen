@@ -19,46 +19,41 @@ export default function Books() {
         return (
             <div
                 key={key1}
-                className="grid grid-cols-5 p-5  hover:shadow-xl border rounded-md w-full h-full "
+                className="  hover:shadow-xl border rounded-md w-full h-full "
             >
-                <div className="col-span-2 p-5 ">
-                    <div className="relative ">
-                        {/* <div className='bg-dark  top-0 -right-3 -z-10 absolute w-[102%] h-[102%] rounded-2xl'/> */}
-                        <Image
-                            width="200"
-                            height="300"
-                            src={book.imageLocation}
-                            // src={profilePic}
-                            alt="Book"
-                            className="border-r-2 border-b border-5 border-dark border-solid"
-                        />
-                    </div>
-                </div>
-                <div className="col-span-3 p-1 md:p-3">
-                    <h1 className="text-purple-900 text-lg md:text-xl font-bold m-1 md:mt-3 md:mb-5">
-                        {book.name}
-                    </h1>
-                    <h1 className="text-dark/90 text-xl font-semibold">প্রকাশক</h1>
-                    <p>প্রভা প্রকাশনী </p>
-                    <p className="text-sm bg-dark/20 p-1 rounded ">
-                        {book.pubiserAddress}
-                    </p>
-                    <div
-                        className="bg-dark text-white text-sm hover:bg-light hover:text-dark
-                       px-2 py-1 flex justify-between my-1"
-                    >
-                        <span>মূল্য - {book.price} টাকা</span>
-                        <span>পৃষ্ঠা সংখ্যা -{book.pageNumber}</span>
+                <div className="  ">
+                    <div className="relative overflow-hidden ">
+                        <img src={book.imageLocation} alt={book.name} className="w-full h-[70%] object-cover hover:scale-110 overflow-hidden transition-all duration-300" />
                     </div>
                     <Link
                         href={book.pdfLocation}
                         target="_blank"
-                        className="underline decoration-primary  underline-offset-4 text-primary  "
+                        className="   "
                     >
-                        <p className="first-letter:text-xl first-letter:font-extrabold">
+                        <p className="text-sm text-center mt-3 text-gray-600 hover:text-blue-500 hover:underline   underline-offset-2 ">
                             View First 10 Page
                         </p>
                     </Link>
+                </div>
+                <div className=" p-1 md:p-5 flex flex-col justify-center">
+                    <h1 className="text-purple-900 text-lg md:text-xl font-bold m-1 md:mt-3 md:mb-5 text-center">
+                        {book.name}
+                    </h1>
+                    <div className="flex items-center justify-start gap-2">
+
+                        <h1 className="text-dark/90 text-sm">প্রকাশক: </h1>
+                        <p>প্রভা প্রকাশনী </p>
+                    </div>
+                    <p className="text-sm bg-dark/20 p-1 rounded text-gray-500">
+                        {book.pubiserAddress}
+                    </p>
+                    <div
+                        className="text-sm mt-3"
+                    >
+                        <p className="text-blue-600">মূল্য - {book.price} টাকা</p>
+                        <p>পৃষ্ঠা সংখ্যা -{book.pageNumber}</p>
+                    </div>
+
                 </div>
             </div>
         );
@@ -121,7 +116,7 @@ export default function Books() {
 
             <div className="bg-light">
                 <div className="hidden md:inline">
-                    <div className=" grid grid-cols-1  md:grid-cols-2 p-10 gap-16 px-5 lg:px-20">
+                    <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 p-10 gap-16 px-5 lg:px-20">
                         {books.map((book, index) => (
                             <div key={index} className="w-full h-full">
 

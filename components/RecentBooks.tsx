@@ -11,19 +11,19 @@ const services = [
     {
         label: "Best Flights",
         flag: true,
-        icon: "/image/books/rabindranath.jpg",
+        icon: "/image/books/gita1.jpg",
         text: "Engrossed listening. Park gate sell they west hard for the."
     },
     {
         label: "Local Events",
         flag: false,
-        icon: "/image/books/nibedita.jpg",
+        icon: "/image/books/gita2.jpg",
         text: "Barton vanity itself do in it. Preferd to men it engrossed listening."
     },
     {
         label: "Customization",
         flag: false,
-        icon: "/image/books/kabita150.jpg",
+        icon: "/image/books/gita3.jpg",
         text: "We deliver outsourced aviation services for military customers"
     },
 ]
@@ -31,17 +31,17 @@ const color = ["bg-blue-500", "border-blue-500", "bg-green-500", "border-green-5
 export default function RecentBooks() {
     return (
         <section className='w-full flex flex-col items-center  lg:px-20'>
-            <h3 className='text-lg uppercase text-gray-500'>CATEGORY</h3>
-            <h1 className='text-2xl lg:text-4xl font-bold max-w-lg text-center mb-[50px]'>উল্লেখযোগ্য গ্রন্থাবলী</h1>
+            <h3 className='text-lg uppercase text-pink-500'>CATEGORY</h3>
+            <h1 className='text-2xl lg:text-4xl font-bold max-w-lg text-center mb-[50px]'>সাম্প্রতিক গ্রন্থাবলী</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 w-full '>
                 {services && services.map((item, i) =>
                     <div key={i} className='relative '>
-                        <div className={` w-full relative  rounded-2xl  p-5 border-gray-700 overflow-hidden h-80  bg-white z-10 shadow-xl ${item.flag ? 'shadow-lg' : ''}`}>
+                        <div className={` w-full relative  rounded-2xl  border-gray-700 overflow-hidden h-80  bg-white z-10 shadow-xl ${item.flag ? 'shadow-lg' : ''}`}>
                             <img src={item.icon} alt="" className={`h-full w-full object-cover rounded-2xl hover:scale-125 transition-all duration-300 ring-2`} />
                             {/* <h2 className='font-bold my-4'>{item.label}</h2>
                             <p className=' text-gray-500 '>{item.text}</p> */}
                         </div>
-                        <div className={`${item.flag ? 'absolute -bottom-10 -left-10 h-24 w-24 bg-[#DF6951] rounded-t-2xl ' : ''}`} />
+                        <div className={`${item.flag ? 'absolute -bottom-10 -left-10 h-24 w-24 bg-yellow-400 rounded-t-2xl ' : ''}`} />
                     </div>
                 )}
 

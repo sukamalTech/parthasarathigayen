@@ -90,7 +90,7 @@ export const books = [
 
   {
     id: 10,
-    name: "",
+    name: "শিকড়ে আদিম ঘ্রান",
     publiser: "প্রভা প্রকাশনী ",
     pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
     pageNumber: "",
@@ -99,17 +99,7 @@ export const books = [
     price: "",
     imageLocation: "/image/books/adimghran.jpg",
   },
-  {
-    id: 11,
-    name: "",
-    publiser: "প্রভা প্রকাশনী ",
-    pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
-    pageNumber: "",
-    pdfLocation: "#",
-    bookType: "",
-    price: "",
-    imageLocation: "/image/books/panchitinatak.jpg",
-  },
+
   {
     id: 12,
     name: "যুগনায়ক বিবেকানন্দ",
@@ -123,7 +113,7 @@ export const books = [
   },
   {
     id: 13,
-    name: "",
+    name: "এসো হৃদয় খুড়ি",
     publiser: "প্রভা প্রকাশনী ",
     pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
     pageNumber: "",
@@ -134,7 +124,7 @@ export const books = [
   },
   {
     id: 14,
-    name: "",
+    name: "মানুষ মাত্রেই রূপান্তরকামী",
     publiser: "প্রভা প্রকাশনী ",
     pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
     pageNumber: "",
@@ -145,7 +135,7 @@ export const books = [
   },
   {
     id: 15,
-    name: "",
+    name: "১৫০টি আবৃত্তি যোগ্য কবিতা",
     publiser: "প্রভা প্রকাশনী ",
     pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
     pageNumber: "",
@@ -156,7 +146,7 @@ export const books = [
   },
   {
     id: 16,
-    name: "",
+    name: " যাযাবর ও জারোয়া রমণী",
     publiser: "প্রভা প্রকাশনী ",
     pubiserAddress: "১কে, রাধানাথ মল্লিক লেন, কলকাতা-১২",
     pageNumber: "",
@@ -174,7 +164,7 @@ export const books = [
     pdfLocation: "/pdf/শ্রীমদভগবদগীতা_ও_মার্ক্সবাদ.pdf",
     bookType: "probondho",
     price: "100",
-    imageLocation: "/image/books/",
+    imageLocation: "/image/books/gita2.jpg",
   },
   {
     id: 18,
@@ -185,7 +175,7 @@ export const books = [
     pdfLocation: "/pdf/শ্রীমদভগবাদগীতা_ও_দিব্যজীবন.pdf",
     bookType: "probondho",
     price: "250",
-    imageLocation: "/image/books/",
+    imageLocation: "/image/books/gita1.jpg",
   },
   {
     id: 19,
@@ -196,7 +186,7 @@ export const books = [
     pdfLocation: "/pdf/সংশয়বাদীর_শত_প্রশ্ন_ও_গীতাধ্যানীর_সদুত্তর.pdf",
     bookType: "probondho",
     price: "150",
-    imageLocation: "/image/books/",
+    imageLocation: "/image/books/gita3.jpg",
   },
   {
     id: 20,

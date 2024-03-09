@@ -26,13 +26,13 @@ export default function Home() {
     <main className=" h-full w-full px-5 ">
 
       <HeroSection font={font3.className} />
-      <div className="h-32 w-52 translate-y-20">
+      <div className="h-32 w-52 translate-y-44">
         <img src="/Group70.svg" alt="" className="h-full w-full object-contain  " />
       </div>
       <RecentBooks />
       <div className="flex justify-end w-full fill-sky-700">
 
-        <div className="h-32 w-52 translate-y-20">
+        <div className="h-32 w-52 -translate-y-16">
           <img src="/Group70.svg" alt="" className="h-full w-full object-contain  " />
         </div>
       </div>
