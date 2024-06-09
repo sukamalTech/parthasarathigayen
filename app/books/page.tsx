@@ -1,3 +1,4 @@
+import WhileInView from "@/components/WhileInView";
 import { books } from "@/lib/books";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -119,8 +120,10 @@ export default function Books() {
                     <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 p-10 gap-16 px-5 lg:px-20">
                         {books.map((book, index) => (
                             <div key={index} className="w-full h-full">
+                                <WhileInView>
 
-                                <BookCard key1={index} book={book} />
+                                    <BookCard key1={index} book={book} />
+                                </WhileInView>
                             </div>
                         ))}
                     </div>

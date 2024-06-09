@@ -6,6 +6,8 @@ import Galary from "@/components/Galary";
 import MostPopular from "@/components/MostPopular";
 import Review from "@/components/Review";
 import { Metadata } from "next";
+import WhileInView from "@/components/WhileInView";
+import SlideFromLeft from "@/components/SlideFromLeft";
 export const metadata: Metadata = {
   title: 'পার্থসারথি গায়েন',
   description: `রবীন্দ্র গবেষক ও গীতা আলোচক- কবি, উপনাসিক, প্রাবন্ধিক শ্রী পার্থসারথি গায়েন বাংলা সাহিত্যর অন্যতম উল্লেখযোগ্য নাম`,
@@ -29,15 +31,24 @@ export default function Home() {
       <div className="h-32 w-52 translate-y-44">
         <img src="/Group70.svg" alt="" className="h-full w-full object-contain  " />
       </div>
-      <RecentBooks />
+      <WhileInView>
+
+        <RecentBooks />
+      </WhileInView>
       <div className="flex justify-end w-full fill-sky-700">
 
         <div className="h-32 w-52 -translate-y-16">
           <img src="/Group70.svg" alt="" className="h-full w-full object-contain  " />
         </div>
       </div>
-      <MostPopular />
-      <Galary />
+      <WhileInView>
+
+        <MostPopular />
+      </WhileInView>
+      <SlideFromLeft>
+
+        <Galary />
+      </SlideFromLeft>
       <Testimonials />
       {/* <Review /> */}
 
