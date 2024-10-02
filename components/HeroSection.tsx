@@ -58,7 +58,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <section className='h-fit w-full flex flex-col  lg:flex-row   lg:px-16  px-2'>
-            <div className='w-full lg:w-[42%] flex flex-col items-start lg:pr-10 relative pt-20 '>
+            <div className='w-full lg:w-[44%] flex flex-col items-start lg:pr-10 relative pt-20 '>
                 <div className='text-pink-500 text-xs lg:text-sm font-semibold flex items-center justify-center gap-3 py-3 rounded-full w-52 bg-white px-5 mb-10'>
                     লেখকের জীবন দর্শন
 
@@ -78,7 +78,7 @@ export default function HeroSection() {
                 </div>
 
             </div>
-            <div className='relative w-full h-full lg:h-[700px] lg:w-[58%] p-5 lg:p-16 grid grid-cols-2 gap-3 '>
+            <div className='relative w-full h-full lg:h-[700px] lg:w-[54%] p-5 lg:p-10 grid grid-cols-2 gap-3 '>
                 <img src="/layer.svg" alt="Image"
                     className='w-full h-auto object-contain absolute  ' />
                 <div className='flex flex-col items-center gap-5'>

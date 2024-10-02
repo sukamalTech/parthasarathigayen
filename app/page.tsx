@@ -8,6 +8,7 @@ import Review from "@/components/Review";
 import { Metadata } from "next";
 import WhileInView from "@/components/WhileInView";
 import SlideFromLeft from "@/components/SlideFromLeft";
+import Awards from "@/components/Awards";
 export const metadata: Metadata = {
   title: 'পার্থসারথি গায়েন',
   description: `রবীন্দ্র গবেষক ও গীতা আলোচক- কবি, উপনাসিক, প্রাবন্ধিক শ্রী পার্থসারথি গায়েন বাংলা সাহিত্যর অন্যতম উল্লেখযোগ্য নাম`,
@@ -45,6 +46,7 @@ export default function Home() {
 
         <MostPopular />
       </WhileInView>
+      <Awards />
       <SlideFromLeft>
 
         <Galary />
