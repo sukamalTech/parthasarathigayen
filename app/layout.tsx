@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="h-full w-full relative">
-        <div className="absolute top-0 left-0 h-[200px] w-full bg-gradient-to-b from-orange-400 blur-[100px] -z-10" />
+        <div className="absolute top-0 left-0 h-[200px] w-[30%] bg-gradient-to-br from-orange-400 blur-[100px] -z-10" />
 
         <Menubar font={salsa.className} />
         {children}

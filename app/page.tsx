@@ -27,7 +27,7 @@ export default function Home() {
 
     <main className=" h-full w-full px-5 ">
 
-      <HeroSection font={font3.className} />
+      <HeroSection />
       <div className="h-32 w-52 translate-y-44">
         <img src="/Group70.svg" alt="" className="h-full w-full object-contain  " />
       </div>
@@ -49,7 +49,7 @@ export default function Home() {
 
         <Galary />
       </SlideFromLeft>
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Review /> */}
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 const works = ["galary1", "galary2", "galary3", "galary4", "galary5", "galary6", "galary7", "galary8",]
 export default function Galary() {
     return (
-        <section className='relative flex flex-col items-center w-full bg-white h-auto pt-5 md:pt-16 pb-16'>
+        <section className='relative flex flex-col items-center w-full bg-white h-auto pt-5 md:pt-16 pb-16 mb-20'>
             <h1 className='text-2xl md:text-4xl font-semibold text-center mb-5'>Our Beautiful Pictures</h1>
             <p className='text-gray-600 text-sm lg:text-base max-w-sm text-center'>Lorem ipsum dolor sit, amet consectetur umque libero unde, nesciunt at m</p>
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2'>
